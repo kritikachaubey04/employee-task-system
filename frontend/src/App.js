@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_BASE = "http://localhost:8000/api";
+const API_BASE = "https://https://employee-task-system-9kzh.onrender.com/api";
 
 export default function App() {
   const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem('session_user')) || null);
