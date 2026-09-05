@@ -1,35 +1,43 @@
-# Employee Task & Project Management System
+# Launch Lions - Employee Task Management System
 
-An internal enterprise web application built for **Launch Lions** to streamline project allocation, employee workload distribution, and real-time task progress monitoring.
-
-## 🚀 Key Features
-
-- **Role-Based Access Control (RBAC):** Distinct dashboards and access tiers for Administrator and Employees.
-- **Admin Command Center:**
-  - Real-time operational metrics (Total Employees, Total Tasks, Completed, In-Progress, Pending).
-  - Employee onboarding and credential creation.
-  - Task assignment engine with priority tagging (Low, Medium, High) and hard deadlines.
-  - Task deletion and reassignment capabilities.
-- **Employee Task Workspace:**
-  - Personalized task feed filtered by employee ID.
-  - Dynamic status life-cycle transition (`Pending` -> `In Progress` -> `Completed`).
-- **RESTful Architecture:** Documented API contracts with automatic Swagger UI documentation.
+A full-stack role-based Employee Task Management web application built with **React** (Frontend) and **FastAPI + SQLite** (Backend), deployed on **Vercel** and **Render**.
 
 ---
 
-## 🛠️ Technology Stack
+## 🚀 Live Links
 
-- **Frontend:** React.js, JavaScript (ES6+), Axios, CSS3
-- **Backend:** FastAPI (Python), Pydantic, Uvicorn
-- **Database:** SQLite (Relational structure with foreign key integrity)
-- **API Standard:** RESTful APIs, CORS Middleware enabled
+- **Live Application (Frontend):** [https://employee-task-system-five.vercel.app](https://employee-task-system-five.vercel.app)
+- **Live Backend API:** [https://employee-task-system-9kzh.onrender.com](https://employee-task-system-9kzh.onrender.com)
+- **Interactive API Docs (Swagger):** [https://employee-task-system-9kzh.onrender.com/docs](https://employee-task-system-9kzh.onrender.com/docs)
 
 ---
 
-## 🔐 Default Demo Credentials
+## 🔑 Demo Login Credentials
 
-| Role | Email | Password | Access Level |
+| Role | Email Address | Password | Permissions |
 | :--- | :--- | :--- | :--- |
-| **Admin** | `admin@launchlions.com` | `admin123` | Full Management & Delegation |
-| **Employee** | `kritika@launchlions.com` | `emp123` | Task Execution & Status Updates |
-| **Employee** | `rahul@launchlions.com` | `emp123` | Task Execution & Status Updates |
+| **Admin** | `admin@launchlions.com` | `admin123` | View metrics, create/assign tasks, delete tasks, view all employees |
+| **Employee** | `kritika@launchlions.com` | `emp123` | View personal assigned tasks, update status (Pending / In Progress / Completed) |
+
+---
+
+## ✨ Features
+
+- **Role-Based Access Control (RBAC):** Distinct dashboards for Admin and Employee accounts.
+- **Admin Command Center:**
+  - Real-time KPI cards: Total Tasks, Completed, In Progress, and Pending counts.
+  - Task Assignment form with dynamic employee assignment, deadlines, and priorities.
+  - Overview table displaying task assignment states and deletion controls.
+- **Employee Portal:**
+  - Personalized task view tailored to the authenticated employee ID.
+  - Status management dropdown to toggle between Pending, In Progress, and Completed.
+- **RESTful API Architecture:** Robust FastAPI backend integrated with SQLite and CORS middleware.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, Axios, Modern CSS
+- **Backend:** FastAPI, Python, Uvicorn
+- **Database:** SQLite
+- **Deployment:** Vercel (Frontend), Render (Backend Web Service)
